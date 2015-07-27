@@ -9,3 +9,6 @@
   * Custom ViewGroup. The child view shows in the cascade way.
 * FlowLayout
   * The child will shows in the new line if the current linewidth is larger than the parent width.
+* MultiLineTextView
+  * When the content in the textView contains both Chinese and English characters, the content is not aligned.So it should rewrite the onDraw.
+* CountDownTimer

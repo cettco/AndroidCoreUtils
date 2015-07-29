@@ -1,31 +1,24 @@
-package com.cettco.coreutils;
+package com.cettco.coreutils.login.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends Activity{
+import com.cettco.coreutils.R;
 
+public class LoginActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_login);
-        // TextView textView = (TextView)findViewById(R.id.count_tv);
-        // System.out.println("width:"+getResources().getDisplayMetrics().);
-        // CountDownTimer timer = new CountDownTimer();
-        // timer.setView(textView);
-        // timer.start(100);
-        // CustomProgressDialog dialog = new
-        // CustomProgressDialog(this,"Loading...",R.anim.progress_loading);
-        // dialog.show();
+        setContentView(R.layout.activity_login);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_login, menu);
         return true;
     }
 
@@ -36,7 +29,7 @@ public class MainActivity extends Activity{
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        // noinspection SimplifiableIfStatement
+        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }

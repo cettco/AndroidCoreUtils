@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/login_hint_tv"
+                android:text="账号密码登陆"
+                android:textColor="#1BC43A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="手机号/邮箱"
+                android:background="@drawable/et_bg"
+                android:layout_marginTop="10dp"
+                android:id="@+id/login_account_et"
+                android:layout_below="@id/login_hint_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="密码"
+                android:drawablePadding="20dp"
+                android:background="@drawable/et_selector"
+                android:layout_marginTop="10dp"
+                android:id="@+id/login_pwd_et"
+                android:layout_below="@id/login_account_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="登陆"
+                android:textColor="@color/tv_selector"
+                android:background="@drawable/btn_selector"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/login_login_btn"
+                android:layout_below="@id/login_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:clickable="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/login_find_pwd_tv"
+                android:layout_below="@id/login_login_btn"
+                android:text="找回密码"
+                android:textColor="@color/tv_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

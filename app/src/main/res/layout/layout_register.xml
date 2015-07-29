@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/login_hint_tv"
+                android:text="手机号注册"
+                android:textColor="#1BC43A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="手机号"
+                android:background="@drawable/et_bg"
+                android:layout_marginTop="10dp"
+                android:id="@+id/register_account_et"
+                android:layout_below="@id/login_hint_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="密码"
+                android:drawablePadding="20dp"
+                android:background="@drawable/et_bg"
+                android:layout_marginTop="10dp"
+                android:id="@+id/register_pwd_et"
+                android:layout_below="@id/register_account_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/register_code_rl"
+                android:layout_below="@id/register_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_centerVertical="true"
+                    android:id="@+id/register_get_code_btn"
+                    android:layout_alignParentRight="true"
+                    android:text="获取验证码"
+                    android:textSize="10sp"
+                    android:textColor="@color/tv_selector"
+                    android:background="@drawable/btn_selector"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/register_get_code_btn"
+                    android:layout_alignParentLeft="true"
+                    android:hint="验证码"
+                    android:background="@drawable/et_bg"
+                    android:id="@+id/register_verify_code_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <Button
+                android:text="注册"
+                android:textColor="@color/tv_selector"
+                android:background="@drawable/btn_selector"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/register_register_btn"
+                android:layout_below="@id/register_code_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

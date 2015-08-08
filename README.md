@@ -12,3 +12,6 @@
 * MultiLineTextView
   * When the content in the textView contains both Chinese and English characters, the content is not aligned.So it should rewrite the onDraw.
 * CountDownTimer
+* Cascadei2layout
+  * The children in this layout is positioned in cascade way.
+  * The toggleState() method is used to invoke animation. Once it’s invoked, the children will be put in grid way.
